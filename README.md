@@ -62,4 +62,5 @@ Media queries are used at 768px and 576px breakpoints. Bootstrap responsive grid
 ## Authors
 
 Balagazinova Yerkezhan and Bekbolatkyzy Kuralay
+
 Created as a Midterm Project by our team.
