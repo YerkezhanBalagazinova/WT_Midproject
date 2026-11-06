@@ -111,13 +111,59 @@
 
         </section>
 
+
+
+
+
+
+
+
+
+        </section>
+
+        <section class="guest-reviews page-container">
+            <h2>Guest Reviews</h2>
+            <p>Share your experience at Aurora Hotel.</p>
+
+            <form id="reviewForm">
+                <label for="reviewName">Your Name</label>
+                <input type="text" id="reviewName" placeholder="Enter your name" required>
+
+                <label for="reviewRating">Rating</label>
+                <select id="reviewRating">
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3">3 - Good</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="1">1 - Poor</option>
+                </select>
+
+                <label for="reviewMessage">Your Review</label>
+                <textarea id="reviewMessage" rows="4" placeholder="Write your review..." required></textarea>
+
+                <button type="submit" class="btn-hotel">Post Review</button>
+            </form>
+
+            <div id="reviewsList"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Aurora Hotel</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
+
     </main>
 
 
     <footer>
         <p>© 2026 Aurora Hotel</p>
     </footer>
-
+<script src="home.js"></script>
 </body>
 
 </html>

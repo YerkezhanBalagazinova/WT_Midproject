@@ -58,8 +58,9 @@ body {
 .hero-content {
     position: absolute;
     top: 50%;
-    left: 8%;
     transform: translateY(-50%);
+    left: 8%;
+    
     max-width: 520px;
 
     background-color: rgba(82, 55, 57, 0.68);
@@ -146,7 +147,59 @@ body {
     color: #777777;
     line-height: 1.5;
 }
+.guest-reviews {
+    padding: 60px 0;
+}
 
+.guest-reviews h2 {
+    color: #523739;
+    font-size: 36px;
+    text-align: center;
+}
+
+.guest-reviews > p {
+    color: #777777;
+    text-align: center;
+}
+
+#reviewForm {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #f5f1ef;
+    padding: 25px;
+}
+
+#reviewForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #523739;
+}
+
+#reviewForm input,
+#reviewForm select,
+#reviewForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    font-family: Arial, sans-serif;
+}
+
+#reviewsList {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.review-card {
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.review-card h3 {
+    color: #523739;
+}
 
 
 footer {
