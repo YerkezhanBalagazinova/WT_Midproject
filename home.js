@@ -1,3 +1,4 @@
+
 const reviews = [];
 const reviewForm = document.getElementById("reviewForm");
 const reviewsList = document.getElementById("reviewsList");
@@ -20,7 +21,7 @@ reviewForm.addEventListener("submit", function(event) {
 function showReviews() {
     reviewsList.innerHTML = "";
 
-    reviews.forEach(function(review) {
+    reviews.forEach(function(review, index) {
         const card = document.createElement("div");
         card.className = "review-card";
 
@@ -30,8 +31,18 @@ function showReviews() {
         const text = document.createElement("p");
         text.textContent = review.text;
 
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.className = "delete-review";
+
+        deleteButton.addEventListener("click", function() {
+            reviews.splice(index, 1);
+            showReviews();
+        });
+
         card.appendChild(title);
         card.appendChild(text);
+        card.appendChild(deleteButton);
         reviewsList.appendChild(card);
     });
 }

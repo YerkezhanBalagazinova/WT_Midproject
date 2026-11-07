@@ -212,6 +212,17 @@ footer {
 footer p {
     margin: 0;
 }
+.delete-review {
+    background-color: #8d7370;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.delete-review:hover {
+    background-color: #523739;
+}
 
 @media (max-width: 768px) {
 
