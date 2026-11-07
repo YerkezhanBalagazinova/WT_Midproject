@@ -1,4 +1,4 @@
-# Aurora Hotel — Endterm Project
+# Aurora Hotel - Endterm Project
 
 Aurora Hotel is a multi-page hotel website. This endterm version continues the midterm project (same topic, design, navigation and pages) and adds JavaScript and jQuery interactivity: room search and filtering, a favorites list, guest reviews, an FAQ accordion, expandable service details and a validated contact form.
 
