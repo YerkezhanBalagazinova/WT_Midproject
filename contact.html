@@ -102,10 +102,10 @@
 
                             <h2>Send a Message</h2>
 
-                            <form>
+                            <form novalidate>
 
                                 <div class="row g-3">
-
+                                    
                                     <div class="col-12 col-md-6">
                                         <label for="name" class="form-label">
                                             Full Name
@@ -116,19 +116,20 @@
                                                id="name"
                                                placeholder="Your name"
                                                required>
+                                        <small id="nameError" class="error-message"></small>
                                     </div>
-
-
+                                    
                                     <div class="col-12 col-md-6">
                                         <label for="email" class="form-label">
                                             Email
                                         </label>
-
+                                        
                                         <input type="email"
                                                class="form-control"
                                                id="email"
                                                placeholder="Your email"
                                                required>
+                                        <small id="emailError" class="error-message"></small>
                                     </div>
 
 
@@ -173,8 +174,12 @@
                                         <textarea class="form-control"
                                                   id="message"
                                                   rows="5"
+                                                  maxlength="500"
                                                   placeholder="Write your message here..."
                                                   required></textarea>
+
+                                        <p id="charCounter">0 / 500 characters</p>
+                                        <small id="messageError" class="error-message"></small>
                                     </div>
 
 
@@ -185,6 +190,7 @@
                                             Send Message
                                         </button>
 
+                                        <p id="formSuccess" class="success-message"></p>
                                     </div>
 
                                 </div>
@@ -207,6 +213,9 @@
     <footer>
         <p>© 2026 Aurora Hotel</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="endterm.js"></script>
 
 </body>
 
