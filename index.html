@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+    
     <title>Aurora Hotel</title>
 </head>
 
@@ -22,6 +24,10 @@
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact</a>
             </div>
+
+            <button type="button" id="themeToggle">
+                🌙 Dark Mode
+            </button>
 
         </div>
     </nav>
@@ -108,18 +114,22 @@
 
                 </div>
             </div>
-
         </section>
 
+       <section id="hotelWeather">
+    <h2>Weather in Astana</h2>
+    <p class="weather-intro">Check the current weather before your stay.</p>
 
+    <div class="weather-card">
+        <img src="images/weather.jpg" alt="Weather" class="weather-image">
 
-
-
-
-
-
-
-        </section>
+        <div class="weather-content">
+            <p class="weather-label">CURRENT WEATHER</p>
+            <div id="weatherResult">Loading weather...</div>
+            <button type="button" id="weatherRefresh">Refresh Weather</button>
+        </div>
+    </div>
+</section>
 
         <section class="guest-reviews page-container">
             <h2>Guest Reviews</h2>
@@ -141,7 +151,7 @@
                 <label for="reviewMessage">Your Review</label>
                 <textarea id="reviewMessage" rows="4" placeholder="Write your review..."></textarea>
 
-                <button type="submit" class="btn-hotel">Post Review</button>
+                <button type="submit" class="btn-hotel" id="reviewSubmit">Post Review</button>
             </form>
 
             <div id="reviewsList"></div>
@@ -154,5 +164,8 @@
     </footer>
 
     <script src="home.js"></script>
+    <script src="weatherAPI.js"></script>
+    <script src="theme.js"></script>
 </body>
+
 </html>
