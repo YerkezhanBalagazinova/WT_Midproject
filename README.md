@@ -199,6 +199,7 @@ The returned JSON is processed and shown through dynamically created DOM element
 ## Team Members
 
 Balagazinova Yerkezhan
+
 Bekbolatkyzy Kuralay
 
 © 2026 Aurora Hotel — educational project.
