@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +10,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="theme.css">
 
     <title>Contact | Aurora Hotel</title>
 </head>
@@ -27,6 +29,10 @@
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact</a>
             </div>
+            
+            <button type="button" id="themeToggle">
+                🌙 Dark Mode
+            </button>
 
         </div>
     </nav>
@@ -37,7 +43,7 @@
         <section class="contact-header">
             <div class="container">
 
-                <h1>Contact Us</h1>
+                <h1>Book Your Stay</h1>>
 
                 <p>
                     Have a question or want to book a room?
@@ -100,7 +106,7 @@
 
                         <div class="contact-form">
 
-                            <h2>Send a Message</h2>
+                            <h2>Room Reservation</h2>
 
                             <form novalidate>
 
@@ -150,9 +156,9 @@
                                             Room Type
                                         </label>
 
-                                        <select class="form-select" id="room">
+                                        <select class="form-select" id="room" required>
 
-                                            <option selected>Select a room</option>
+                                            <option value="" selected disabled>Select a room</option>
                                             <option>Standard Room</option>
                                             <option>Twin Room</option>
                                             <option>Deluxe Room</option>
@@ -164,6 +170,48 @@
 
                                         </select>
                                     </div>
+                                    
+                                    
+                                    
+                                    <div class="col-12 col-md-6">
+                                        <label for="checkIn" class="form-label">
+                                            Check-in Date
+                                        </label>
+                                        <input type="date"
+                                               class="form-control"
+                                               id="checkIn"
+                                               required>
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-6">
+                                        <label for="checkOut" class="form-label">
+                                            Check-out Date
+                                        </label>
+                                        <input type="date"
+                                               class="form-control"
+                                               id="checkOut"
+                                               required>
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-6">
+                                        <label for="guests" class="form-label">
+                                            Number of Guests
+                                        </label>
+                                        <input type="number"
+                                               class="form-control"
+                                               id="guests"
+                                               min="1"
+                                               max="10"
+                                               value="1"
+                                               required>    
+                                    </div>
+
+<div class="col-12">
+    <div id="bookingTotal">
+        Select a room and dates to see the total price.
+    </div>
+    <small id="bookingError" class="error-message"></small>
+</div>
 
 
                                     <div class="col-12">
@@ -176,7 +224,7 @@
                                                   rows="5"
                                                   maxlength="500"
                                                   placeholder="Write your message here..."
-                                                  required></textarea>
+                                                  ></textarea>
 
                                         <p id="charCounter">0 / 500 characters</p>
                                         <small id="messageError" class="error-message"></small>
@@ -185,10 +233,9 @@
 
                                     <div class="col-12">
 
-                                        <button type="submit"
-                                                class="btn contact-button">
-                                            Send Message
-                                        </button>
+                                       <button type="submit" class="btn contact-button">
+    Request Booking
+</button>
 
                                         <p id="formSuccess" class="success-message"></p>
                                     </div>
@@ -215,8 +262,10 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="hotel-data.js"></script>
     <script src="endterm.js"></script>
-
+    <script src="theme.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>

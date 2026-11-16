@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
     // 1. FAQ Accordion
     $(".faq-answer").hide();
 
@@ -47,55 +47,4 @@ $(document).ready(function () {
     });
 
 
-    // 4. Form Validation
-    $(".contact-form form").on("submit", function (event) {
-
-        event.preventDefault();
-
-        let name = $("#name").val().trim();
-        let email = $("#email").val().trim();
-        let message = $("#message").val().trim();
-
-        let isValid = true;
-
-        $(".error-message").text("");
-        $("#formSuccess").text("");
-
-        if (name.length < 2) {
-            $("#nameError").text(
-                "Name must contain at least 2 characters."
-            );
-            isValid = false;
-        }
-
-        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailPattern.test(email)) {
-            $("#emailError").text(
-                "Please enter a valid email address."
-            );
-            isValid = false;
-        }
-
-        if (message.length < 10) {
-            $("#messageError").text(
-                "Message must contain at least 10 characters."
-            );
-            isValid = false;
-        }
-
-        if (isValid) {
-
-            $("#formSuccess")
-                .text("Your message was submitted successfully!")
-                .hide()
-                .fadeIn(500);
-
-            this.reset();
-
-            $("#charCounter").text("0 / 500 characters");
-        }
-
-    });
-
-})
+});

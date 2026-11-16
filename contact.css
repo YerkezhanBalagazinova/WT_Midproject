@@ -102,6 +102,20 @@
     background-color: #523739;
     color: #ffffff;
 }
+#bookingTotal {
+    background-color: #f5f1ef;
+    color: #523739;
+    border: 1px solid #d6cbc7;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#bookingError {
+    display: block;
+    margin-top: 8px;
+}
 
 
 @media (max-width: 768px) {
@@ -141,4 +155,31 @@
         font-size: 26px;
     }
 
+}
+
+
+/* Form Validation */
+
+.form-group input.invalid,
+.form-group textarea.invalid {
+    border: 2px solid red !important;
+    background-color: #fff0f0;
+}
+
+.form-group input.valid,
+.form-group textarea.valid {
+    border: 2px solid green !important;
+}
+
+.error-message {
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    min-height: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
 }
