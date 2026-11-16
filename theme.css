@@ -1,0 +1,404 @@
+/* DARK MODE - GENERAL */
+
+body.dark-mode {
+    background-color: #1e1b1c;
+    color: #f1e8e8;
+}
+
+body.dark-mode main {
+    background-color: #1e1b1c;
+}
+
+body.dark-mode section {
+    background-color: #292425;
+    color: #f1e8e8;
+}
+
+/* HEADINGS AND TEXT */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode label {
+    color: #f1e8e8;
+}
+
+/* NAVBAR */
+
+body.dark-mode .navbar {
+    background-color: #171415;
+}
+
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+#themeToggle {
+    background-color: #8d7370;
+    color: white;
+    border: 1px solid #d4c5b7;
+    border-radius: 5px;
+    padding: 9px 15px;
+    cursor: pointer;
+}
+
+#themeToggle:hover {
+    background-color: #755759;
+}
+
+/* CARDS AND CONTAINERS */
+
+body.dark-mode .room-card,
+body.dark-mode .full-room-card,
+body.dark-mode .review-card,
+body.dark-mode .contact-form,
+body.dark-mode .contact-info,
+body.dark-mode .service-card,
+body.dark-mode .faq-item,
+body.dark-mode .about-card,
+body.dark-mode .why-card {
+    background-color: #383132;
+    color: #f1e8e8;
+    border-color: #655456;
+}
+
+/* ABOUT AND SERVICES */
+
+body.dark-mode .about-header,
+body.dark-mode .about-story,
+body.dark-mode .why-us,
+body.dark-mode .services-header,
+body.dark-mode .services-section {
+    background-color: #292425;
+    color: #f1e8e8;
+}
+
+/* FORMS */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #383132 !important;
+    color: #ffffff !important;
+    border-color: #8d7370 !important;
+}
+
+/* Placeholder text */
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder,
+body.dark-mode .form-control::placeholder {
+    color: #c5b8b8 !important;
+    opacity: 1;
+}
+
+/* Select options */
+
+body.dark-mode select option {
+    background-color: #383132;
+    color: #ffffff;
+}
+
+/* FORM FOCUS */
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+    background-color: #453b3d !important;
+    color: #ffffff !important;
+    border-color: #c49b9b !important;
+    outline: none;
+}
+
+/* TABLES */
+
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td {
+    background-color: #383132;
+    color: #f1e8e8;
+    border-color: #655456;
+}
+
+/* WEATHER */
+
+body.dark-mode .weather-card {
+    background-color: #383132;
+}
+
+body.dark-mode .weather-temperature,
+body.dark-mode .weather-details p {
+    color: #ffffff !important;
+}
+
+/* FOOTER */
+
+body.dark-mode footer {
+    background-color: #171415;
+    color: #ffffff;
+}
+
+/* BUTTONS */
+
+body.dark-mode button:not(#themeToggle) {
+    color: #ffffff;
+}
+
+/* ERRORS AND SUCCESS */
+
+body.dark-mode .error-message {
+    color: #ff9999;
+}
+
+body.dark-mode .success-message {
+    color: #a8e6a3;
+}
+
+
+/* SERVICES - FAQ */
+
+body.dark-mode .faq-question {
+    color: #ffffff !important;
+    background-color: #383132 !important;
+}
+
+body.dark-mode .faq-question span {
+    color: #ffffff !important;
+}
+
+body.dark-mode .faq-answer {
+    color: #e8dddd !important;
+    background-color: #383132 !important;
+}
+
+body.dark-mode .faq-answer p,
+body.dark-mode .faq-answer li {
+    color: #e8dddd !important;
+}
+
+/* MORE DETAILS */
+
+body.dark-mode .details-btn {
+    color: #ffffff !important;
+    background-color: #523739 !important;
+}
+
+body.dark-mode .details-content {
+    color: #e8dddd !important;
+    background-color: #383132 !important;
+}
+
+body.dark-mode .details-content p,
+body.dark-mode .details-content li {
+    color: #e8dddd !important;
+}
+
+
+
+/* DARK MODE - ALL BORDERS */
+
+/* Horizontal lines */
+body.dark-mode hr {
+    border: 0 !important;
+    border-top: 1px solid #8d7370 !important;
+    opacity: 1 !important;
+}
+
+/* General borders */
+body.dark-mode * {
+    border-color: #655456;
+}
+
+/* Cards and sections */
+body.dark-mode .about-card,
+body.dark-mode .contact-info,
+body.dark-mode .contact-form,
+body.dark-mode .contact-item,
+body.dark-mode .about-section,
+body.dark-mode .about-story {
+    border-color: #655456 !important;
+}
+
+/* Bootstrap horizontal borders */
+body.dark-mode .border,
+body.dark-mode .border-top,
+body.dark-mode .border-bottom {
+    border-color: #655456 !important;
+}
+
+/* Pseudo-element lines */
+body.dark-mode .contact-item::after,
+body.dark-mode .contact-item::before,
+body.dark-mode .about-section::after,
+body.dark-mode .about-section::before {
+    border-color: #8d7370 !important;
+}
+
+
+/* SERVICES DARK MODE */
+
+body.dark-mode .services-header,
+body.dark-mode .services-section {
+    background-color: #292425 !important;
+}
+
+body.dark-mode .services-header h1,
+body.dark-mode .services-section h2 {
+    color: #f1e8e8 !important;
+}
+
+body.dark-mode .services-header p {
+    color: #d0c3c3 !important;
+}
+
+/* FAQ SECTION */
+
+body.dark-mode .faq-section,
+body.dark-mode .service-details {
+    background-color: #292425 !important;
+}
+
+body.dark-mode .faq-section h2,
+body.dark-mode .service-details h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .faq-item {
+    background-color: #383132 !important;
+    border: 1px solid #8d7370 !important;
+}
+
+body.dark-mode .faq-question {
+    background-color: #383132 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .faq-question span {
+    color: #e0b5a5 !important;
+}
+
+body.dark-mode .faq-answer {
+    background-color: #383132 !important;
+    color: #f1e8e8 !important;
+}
+
+body.dark-mode .faq-answer p,
+body.dark-mode .faq-answer li {
+    color: #f1e8e8 !important;
+}
+
+/* MORE DETAILS */
+
+body.dark-mode .service-detail-item {
+    background-color: #383132 !important;
+    border: 1px solid #8d7370 !important;
+}
+
+body.dark-mode .service-detail-item h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .service-detail-item p {
+    color: #e8dddd !important;
+}
+
+body.dark-mode .details-btn {
+    background-color: #a87560 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .details-btn:hover {
+    background-color: #895b49 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .details-content {
+    background-color: #453b3d !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .details-content p,
+body.dark-mode .details-content li {
+    color: #f1e8e8 !important;
+}
+
+
+/* FAVORITE BUTTON - LIGHT MODE */
+
+.favorite-button {
+    display: inline-block;
+    background-color: #523739 !important;
+    color: #ffffff !important;
+    border: 1px solid #523739 !important;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.favorite-button:hover {
+    background-color: #755759 !important;
+    color: #ffffff !important;
+}
+
+/* FAVORITE BUTTON - DARK MODE */
+
+body.dark-mode .favorite-button {
+    background-color: #a87560 !important;
+    color: #ffffff !important;
+    border: 1px solid #c49a86 !important;
+}
+
+body.dark-mode .favorite-button:hover {
+    background-color: #895b49 !important;
+    color: #ffffff !important;
+}
+
+/* SAVED FAVORITE */
+
+body.dark-mode .favorite-button:focus,
+.favorite-button:focus {
+    color: #ffffff !important;
+    outline: 2px solid #c49a86;
+    outline-offset: 2px;
+}
+
+
+/* ABOUT DARK MODE */
+
+body.dark-mode .about-header,
+body.dark-mode .why-us,
+body.dark-mode .about-story,
+body.dark-mode .hotel-info {
+    background-color: #292425 !important;
+}
+
+body.dark-mode .about-header h1,
+body.dark-mode .about-story h2,
+body.dark-mode .why-us h2,
+body.dark-mode .about-card h3,
+body.dark-mode .info-box h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-header p,
+body.dark-mode .about-story p,
+body.dark-mode .about-card p,
+body.dark-mode .info-box p,
+body.dark-mode .section-description {
+    color: #e0d5d5 !important;
+}
+
+body.dark-mode .about-card,
+body.dark-mode .info-box {
+    background-color: #383132 !important;
+    border: 1px solid #8d7370 !important;
+}
