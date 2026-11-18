@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
     restoreDraft();
     updateCounter();
     updateBooking();
-
+    messageInput.addEventListener("input", updateCounter);
     nameInput.addEventListener("blur", validateName);
     emailInput.addEventListener("blur", validateEmail);
 
