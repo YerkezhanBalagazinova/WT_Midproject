@@ -34,16 +34,7 @@ $(document).ready(function () {
         btn.text(isOpen ? "More Details" : "Less Details");
     });
 
-    // 3. Character Counter
-    $("#message").on("input", function () {
-
-        let currentLength = $(this).val().length;
-        let maxLength = 500;
-
-        $("#charCounter").text(
-            currentLength + " / " + maxLength + " characters"
-        );
-
+});
     });
 
 
