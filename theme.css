@@ -402,3 +402,14 @@ body.dark-mode .info-box {
     background-color: #383132 !important;
     border: 1px solid #8d7370 !important;
 }
+
+
+
+
+body.dark-mode .guest-reviews {
+    background-color: #1e1b1c;
+}
+
+body.dark-mode #reviewForm label {
+    color: #f1e8e8;
+}
